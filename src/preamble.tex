@@ -1,0 +1,88 @@
+\usepackage{amsmath,amssymb,amsthm,latexsym,color} %Basic packages
+\usepackage{dsfont} % bb fonts for numbers
+\usepackage{braket} % nice sets and more
+\usepackage{accents}
+\usepackage{musicography}
+\usepackage{biblatex} % TODO: [citestyle=mla] causes compilation error
+\usepackage{graphicx}
+\usepackage[nice]{nicefrac}
+\allowdisplaybreaks[2] %Allow page breaks in multi-line displays
+\usepackage{xspace} % smart whitespacing after commands
+\usepackage{mathtools}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Swaps the roles of phi and epsilon with the var versions
+\let\temp\phi
+\let\phi\varphi
+\let\varphi\temp
+
+\let\temp\epsilon
+\let\epsilon\varepsilon
+\let\varepsilon\temp
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Shorthand 
+\newcommand{\seq}[1]{\{#1\}}
+\newcommand{\linf}{\lim_{n \to \infty}}
+\newcommand{\Alpha}{\mathcal{A}}
+\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\newcommand{\limnf}[1]{\liminf \limits_{#1}}
+\newcommand{\limsp}[1]{\limsup \limits_{#1}}
+\newcommand{\lone}{L^1}
+
+\newcommand{\kph}{\ensuremath{\ket{\phi}}\xspace}
+\newcommand{\kphind}{\ensuremath{\ket{\phi_i}}\xspace}
+\newcommand{\kpho}{\ensuremath{\ket{\phi_0}}\xspace}
+\newcommand{\kphi}{\ensuremath{\ket{\phi_1}}\xspace}
+\newcommand{\kphii}{\ensuremath{\ket{\phi_2}}\xspace}
+\newcommand{\ko}{\ensuremath{\ket{0}}\xspace}
+\newcommand{\ki}{\ensuremath{\ket{1}}\xspace}
+\newcommand{\koo}{\ensuremath{\ket{00}}\xspace}
+\newcommand{\kio}{\ensuremath{\ket{10}}\xspace}
+\newcommand{\koi}{\ensuremath{\ket{01}}\xspace}
+\newcommand{\kii}{\ensuremath{\ket{11}}\xspace}
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Shorhands for commond blackboard bold symbols
+\newcommand{\R}{\ensuremath{\mathbb R}}
+\newcommand{\C}{\ensuremath{\mathbb C}}
+\newcommand{\N}{\ensuremath{\mathbb N}}
+\newcommand{\Q}{\ensuremath{\mathbb Q}}
+\newcommand{\Z}{\ensuremath{\mathbb Z}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Used to alerting the reader
+\newcommand{\nb}[1]{{\color{red}{$\clubsuit$#1$\clubsuit$}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Theorem environments
+\theoremstyle{definition}
+\newtheorem{soln}{Solution}
+\newtheorem{defn}{Definition}[soln]
+\newtheorem{post}{Postulate}
+\numberwithin{defn}{section}
+
+\theoremstyle{plain}
+\newtheorem{theo}{Theorem}[soln]
+\newtheorem{prop}{Proposition}[soln]
+\newtheorem{lem}{Lemma}[soln]
+\newtheorem{claim}{Claim}[soln]
+\newtheorem{cor}{Corollary}[soln]
+\newtheorem*{exercise*}{Exercise}
+
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[soln]
+\numberwithin{rem}{section}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
